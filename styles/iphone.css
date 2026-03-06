@@ -13,6 +13,9 @@ body {
   overflow-x: hidden;
   background: #000;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 header {
