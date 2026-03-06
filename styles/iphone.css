@@ -15,7 +15,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 header {
@@ -103,8 +103,10 @@ model-viewer{
    justify-content: center;
 }
 
-.fex {
+.flex {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 button{
@@ -138,51 +140,50 @@ model-viewer{
   }
 
   .container {
-    gap: 1rem;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .menu {
     gap: 1rem;
-  }
-  
-
-   .home {
-    height: 100vh;
-    padding: 90px 0 0 0;
-  }
-
-  .home img {
-    height: 80%;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .menu-link {
     font-size: 16px;
   }
 
-  /* esconder botão comprar */
   .button-comprar {
     display: none;
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 32px;
     text-align: center;
   }
 
   p {
     font-size: 17px;
     text-align: center;
-    padding: 0 10px;
   }
 
   model-viewer {
-    width: 90%;
-    height: 400px;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
   }
 
-  .botoes {
-    margin-top: 10px;
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .home img{
+    width:100%;
+    height:auto;
   }
 
 }
