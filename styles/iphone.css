@@ -12,10 +12,9 @@ html {
 body {
   overflow-x: hidden;
   background: #000;
-  width: 100%;
   display: flex;
-  flex-direction: column;
-
+  justify-content: center;
+  width: 100%;
 }
 
 header {
@@ -73,7 +72,7 @@ header {
   transation-duration: 200ms;
 }
 
-.cor {
+section {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -103,10 +102,8 @@ model-viewer{
    justify-content: center;
 }
 
-.flex {
+.fex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 button{
@@ -123,16 +120,6 @@ model-viewer{
   height:400px;
 }
 
-.home {
-    height: 100vh;
-    padding: 70px 0 0 0;
-  }
-
-  .home img {
-    height: 100%;
-    width: 100%;
-  }
-
 @media (max-width: 768px) {
 
   header {
@@ -140,50 +127,40 @@ model-viewer{
   }
 
   .container {
-    flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
   }
 
   .menu {
     gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .menu-link {
     font-size: 16px;
   }
 
+  /* esconder botão comprar */
   .button-comprar {
     display: none;
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 38px;
     text-align: center;
   }
 
   p {
     font-size: 17px;
     text-align: center;
+    padding: 0 10px;
   }
 
   model-viewer {
-    width: 100%;
-    max-width: 350px;
-    height: 350px;
+    width: 90%;
+    height: 400px;
   }
 
-  .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .home img{
-    width:100%;
-    height:auto;
+  .botoes {
+    margin-top: 10px;
   }
 
 }
