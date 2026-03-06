@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  color: #ffffff;
+  padding: 0 2rem;
+  height: 4.8rem;
+  display: grid;
+  align-items: center;
+}
+
+
+.container {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.menu {
+ display: flex; 
+ list-style-type: none;
+ gap: 2rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #ffffffb3;
+  display: inline-block;
+
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.menu-link:hover {
+  color: #ffffff;
+  transation-duration: 500ms;
+}
+
+.button-comprar {
+  background-color: #0a08a9;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 1rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.button-comprar:hover {
+  transform: scale(1.05);
+  transation-duration: 200ms;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   justify-content: center;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 20px;
+}
+
+model-viewer{
+  width:500px;
+  height:400px;
+}
+
+.botoes{
+  margin-top:20px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+   justify-content: center;
+}
+
+.fex {
+  display: flex;
+}
+
+button{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:none;
+  margin:5px;
+  cursor:pointer;
+}
+
+model-viewer{
+  width:500px;
+  height:400px;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    padding: 0 1rem;
+  }
+
+  .container {
+    gap: 1rem;
+  }
+
+  .menu {
+    gap: 1rem;
+  }
+
+  .menu-link {
+    font-size: 16px;
+  }
+
+  /* esconder botão comprar */
+  .button-comprar {
+    display: none;
+  }
+
+  h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 17px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  model-viewer {
+    width: 90%;
+    height: 400px;
+  }
+
+  .botoes {
+    margin-top: 10px;
+  }
+
+}

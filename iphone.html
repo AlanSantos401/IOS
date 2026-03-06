@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./styles/iphone.css">
+  <title>Document</title>
+</head>
+<body>
+ <header>
+    <div class="container">
+        <ul class="menu">
+          <li><a href="#" class="menu-link">Designer</a></li>
+          <li><a href="#servico" class="menu-link">Câmera</a></li>
+          <li><a href="#" class="menu-link" >Desempenho</a></li>
+          <li><a href="#" class="menu-link">Cores</a></li>
+        </ul>
+
+        <a class="button-comprar">
+          Comprar
+        </a>
+    </div>
+  </header>
+  <section>
+    <h1>Escolha sua cor</h1>
+    <p>Quatro acabamentos em titânio</p>
+    <div class="botoes">
+
+      <model-viewer
+id="controle"
+src="./iphone_17_pro_max_model/scene.gltf"
+camera-controls
+auto-rotate>
+</model-viewer>
+<div class="flex">
+<button style="background:rgb(220, 220, 220)"
+onclick="trocar('./iphone_17_pro_max_model_prata/scene.gltf')"></button>
+
+
+
+<button style="background:rgb(188, 76, 1)"
+onclick="trocar('./iphone_17_pro_max_model/scene.gltf')"></button>
+
+
+<button style="background:blue"
+onclick="trocar('./iphone_17_pro_max_model_azul/scene.gltf')"></button>
+
+<button style="background:rgb(192, 12, 165)"
+onclick="trocar('./escapamento-carro-da-barbie-1956/source/Carro da Barbie com Escapamento.glb')"></button>
+</div>
+</div>
+
+
+<script>
+function trocar(caminho){
+  const modelo = document.getElementById("controle")
+  modelo.src = caminho
+}
+</script>
+  </section>
+</body>
+</html>
